@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- INTERNAL CSS -->
+    <style>
+        h1 {
+            color: blue;
+        }
+    </style>
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- INLINE CSS -->
+    <h1 style="color:red;">Frontend</h1>
+    <h2 class="title" id="backend">BACKEND</h2>
+
+    <p class="title">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In porro quam repellat magnam, numquam dolor illum
+        alias assumenda hic ipsam recusandae aspernatur earum accusamus ea, accusantium eos. In, suscipit non.
+    </p>
+
+    <h1>Frontend</h1>
+    <p>CSS eğitimi</p>
+    <h2>Angular</h2>
+    <h3>Flexbox</h3>
+
+    <!-- BORDER STYLES-->
+
+    <p style="border:1px solid red;
+    border-radius: 30px;">FrontEnd</p>
+
+    <h1>Border stilleri</h1>
+    <p class="dotted">Dotted border</p>
+    <p class="dashed">Dashed border</p>
+    <p class="solid">Solid border</p>
+    <p class="double">Double border</p>
+    <p class="groove">Groove border</p>
+    <p class="ridge">Ridge border</p>
+    <p class="inset">İnset border</p>
+    <p class="outset">Outset border</p>
+    <p class="none">None border</p>
+    <p class="hidden">Hidden border</p>
+    <p class="mix">Mix border</p>
+
+    <!-- PADDING & MARGIN -->
+    <p class="frt">Frontend</p>
+    <p class="bck">Backend</p>
+
+
+    <!-- DIV POSITION -->
+
+    <!--
+        3 div tagını yan yana hizalamak için kapsayıcı bir div atadık
+        display: flex yazdığımızda default olarak flex-direction: row olarak hizalar
+        yatayda hizalamak için justify-content: flex-start default olarak hizalar
+        dikey olarak hizalamak için align-items kullandık, height değerini arttırdıktan sonra.
+    -->
+
+    <div style="display:flex; justify-content: center;">
+        <div style="border: 1px solid red; border-radius: 30px; width: 300px; height: 300px; margin-right: 30px;">
+            <p style=" padding: 20px 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display:-webkit-box;
+            -webkit-line-clamp: 10; /*after 3 line show ... */
+            -webkit-box-orient: vertical;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
+                veritatis provident quo hic? Beatae sapiente at distinctio provident cum minus optio et qui dolores
+                ratione reprehenderit rerum iste cumque tempora quos, voluptates ad consequatur eos perspiciatis?
+                Deserunt doloremque maxime repellendus quis praesentium vitae deleniti totam aperiam! Laudantium ratione
+                iste nesciunt. Neque exercitationem ipsa aliquid unde quibusdam corporis, reiciendis quis, commodi
+                perferendis minus repellendus tempore libero magnam debitis quaerat. Quibusdam vel asperiores velit
+                blanditiis beatae. Recusandae deleniti expedita, beatae perferendis autem vitae reprehenderit iure iste
+                voluptas nisi ipsum asperiores dicta maiores modi ex pariatur molestias, natus, ratione voluptatum
+                corporis fugiat. Eos?</p>
+        </div>
+        <div style="border: 1px solid red; border-radius: 30px; width: 300px; height: 300px; margin-right: 30px;">
+            <p style=" padding: 20px 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae error eos at
+                tempore minus nam ab quas
+                provident non excepturi?</p>
+        </div>
+        <div style="border: 1px solid red; border-radius: 30px; width: 300px; height: 300px;">
+            <p style=" padding: 20px 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae error eos at
+                tempore minus nam ab quas
+                provident non excepturi?</p>
+        </div>
+    </div>
+    <div style="display:flex; justify-content: center; margin-top: 30px;">
+        <div style="border: 1px solid red; border-radius: 30px; width: 300px; height: 300px; margin-right: 30px;">
+            <p style=" padding: 20px 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae error eos at
+                tempore minus nam ab quas
+                provident non excepturi?</p>
+        </div>
+        <div style="border: 1px solid red; border-radius: 30px; width: 300px; height: 300px; margin-right: 30px;">
+            <p style=" padding: 20px 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae error eos at
+                tempore minus nam ab quas
+                provident non excepturi?</p>
+        </div>
+        <div style="border: 1px solid red; border-radius: 30px; width: 300px; height: 300px;">
+            <p style=" padding: 20px 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae error eos at
+                tempore minus nam ab quas
+                provident non excepturi?</p>
+        </div>
+    </div>
+
+    <!-- 
+        <button>Kaydet</button>
+        <button>İptal Et</button>
+    -->
+
+
+</body>
+
+</html>
