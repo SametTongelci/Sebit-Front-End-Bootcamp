@@ -8,13 +8,13 @@
     <title>Document</title>
 
     <style>
-        input[type=text],
-        select {
+        .formElement {
             width: 100%;
             padding: 10px;
             border-radius: 10px;
             margin: 8px 0px;
             box-sizing: border-box;
+            border: 1px solid red;
         }
 
         /*focus & hover*/
@@ -47,11 +47,11 @@
 
     <form class="formGeneral">
         <label>Ad</label>
-        <input type="text" name="firstName" placeholder="Adınızı giriniz">
+        <input type="text" class="formElement" name="firstName" placeholder="Adınızı giriniz">
         <label>Soyad</label>
-        <input type="text" name="lastName" placeholder="Soyadınızı giriniz">
+        <input type="text" class="formElement" name="lastName" placeholder="Soyadınızı giriniz">
         <label>Ülkeler</label>
-        <select name="country">
+        <select class="formElement" name="country">
             <option value=" tr">Türkiye</option>
             <option value=" en">England</option>
             <option value=" fr">France</option>
