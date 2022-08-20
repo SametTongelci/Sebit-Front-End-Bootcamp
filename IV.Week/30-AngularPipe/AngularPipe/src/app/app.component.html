@@ -1,0 +1,85 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>İsim</label>
+        <input class="form-control" type="text" (input)="OnNameChange($event.target.value)">
+
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>İsim</b></label>
+      <div>
+        <!-- Yazılan ismin ilk harflerini büyük yapmak için kullandığımız TitleCasePipe -->
+        <!-- {{name | titlecase }} -->
+
+        <!-- Yazılan ismi büyük harflere çevirmek için kullandığımız UpperCasePipe -->
+        <!-- {{name | uppercase }} -->
+
+        {{name | lowercase }}
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Tarih</label>
+        <input class="form-control" type="date" (input)="OnDateChange($event.target.value)">
+
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>Tarih</b></label>
+      <div>
+
+        <!-- {{date | date: 'longDate'}} -->
+        {{date | date: 'MMMM d, y'	}}
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Tutar</label>
+        <input class="form-control" type="text" (input)="OnMoneyChange($event.target.value)">
+
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>Tutar</b></label>
+      <div>
+        <!-- Angular API List -> CurrencyPipe -> ISO 4217 -> code -->
+        {{money | currency: 'EUR'}}
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Boy</label>
+        <input class="form-control" type="text" (input)="OnHeightChange($event.target.value)">
+
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>Boy</b></label>
+      <div>
+        <!-- DecimalPipe ('soldan başlangıçtaki minimum karakter sayısı . sağ tarafta minimum 1 maksimum 4 karakter olacak') -->
+        {{height | number: '1.1-4'}}
+        <!-- {{height | number: '2.1-6'}} -->
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
