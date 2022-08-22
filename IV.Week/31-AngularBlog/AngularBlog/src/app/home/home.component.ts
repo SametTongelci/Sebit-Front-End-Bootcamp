@@ -33,12 +33,13 @@ export class HomeComponent implements OnInit {
 
   openDialog(element: any, vieworUpdate: boolean) {
     const dialogRef = this.dialog.open(BlogDialogComponent, {
-      width: '450px',
+      // width: '450px',
       data: {blog : element, isUpdate : vieworUpdate}
     })
 
     dialogRef.afterClosed().subscribe(()=>{
-      this.getBlogList();
+      // Tüm datayı çekerek değiştirdiğimiz elemanı güncellemek
+      // this.getBlogList();
     })
   }
 

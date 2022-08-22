@@ -7,7 +7,7 @@
 
 </div>
 
-<form [formGroup]="form" *ngIf="isUpdateBlog">
+<form [formGroup]="form" *ngIf="isUpdateBlog" class ="form">
   <div class="container">
     <div class="row">
       <mat-form-field>
@@ -35,3 +35,28 @@
   </div>
 
 </form>
+
+<div *ngIf="!isUpdateBlog" class="container">
+  <div class="row mb-2">
+    <div class="col-lg-6">
+      <img class="w-100" src="assets/images/image{{imageUrl}}.jpg">
+    </div>
+    <div class="col-lg-6">
+      <h2>{{title}}</h2>
+      <p>{{content}}</p>
+    </div>
+  </div>
+
+  <div class="row commentDiv" *ngFor="let comment of commentData">
+    <div class="col-lg-2">
+      <img class="commentImg" src="assets/images/profile/profile{{comment.userId}}.jpg">
+    </div>
+
+    <div class="col-lg-10">
+      <h3>{{comment.name}}</h3>
+      <p>{{comment.body}}</p>
+    </div>
+
+
+  </div>
+</div>

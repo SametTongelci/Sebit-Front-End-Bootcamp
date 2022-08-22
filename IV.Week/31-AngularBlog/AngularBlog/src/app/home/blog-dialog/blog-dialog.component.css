@@ -1,0 +1,17 @@
+::ng-deep .mat-dialog-container {
+  height: auto;
+}
+.form {
+  min-width: 500px;
+}
+
+.commentDiv {
+  background-color: lightgrey;
+  padding: 20px;
+  margin-bottom: 20px
+}
+
+.commentImg {
+  width: 50px;
+  border-radius: 50%;
+}
