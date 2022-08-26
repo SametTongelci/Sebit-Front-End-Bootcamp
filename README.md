@@ -51,5 +51,7 @@ Bootcamp organized by Sebit Education and Information Technologies and Coderspac
 * __Angular Blog Project__
 
 ### Week 5 Learned:
+* Angular Reactive Form
+* Angular Template Form
 * __Angular Blog Project__
 * __Angular Article Project__
