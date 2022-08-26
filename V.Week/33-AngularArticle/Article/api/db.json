@@ -1,0 +1,34 @@
+{
+  "articles": [
+    {
+      "author": "samet T",
+      "title": "test 1",
+      "content": "dfsgdfgdsfh",
+      "comments": [
+        {
+          "username": "samett",
+          "comment": "ilk  yorum"
+        },
+        {
+          "username": "fasgsdfas",
+          "comment": "sdgafasdg"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "author": "Samet Töngelci",
+      "title": "test data",
+      "content": "Test Data 2. yazı;",
+      "comments": [],
+      "id": 2
+    },
+    {
+      "author": "Samet",
+      "title": "Test 3",
+      "content": "Test 3 Data",
+      "comments": [],
+      "id": 3
+    }
+  ]
+}
